@@ -1,6 +1,4 @@
 '''
-Created on 18 oct 2024
-
 @author: Galocha
 '''
 from funciones.funciones import ejercicio1, ejercicio2, ejercicio3, ejercicio4, ejercicio5, f, fp
