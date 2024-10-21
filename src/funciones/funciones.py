@@ -4,7 +4,6 @@
 
 from us.lsi.tools import Preconditions
 import math
-from fontTools.misc.bezierTools import epsilon
 
 def ejercicio1(n:int, k:int) -> int:
     Preconditions.check_argument(n>=k, "N tiene que ser mayor o igual que k")
@@ -20,9 +19,9 @@ def ejercicio2(a:int, r:int, k:int) -> int:
         producto = producto*e
     return producto
 
-def ejercicio3(n:int, k:int) -> int:
+def ejercicio3(n:int, k:int) -> float:
     Preconditions.check_argument(n>=k, "N tiene que ser mayor o igual que k")
-    return math.factorial(n) // (math.factorial(k) * math.factorial(n - k))     #fórmula del número combinatorio: (n sobre k) = n!/(k!(n-k)!)
+    return math.factorial(n) / (math.factorial(k) * math.factorial(n - k))     #fórmula del número combinatorio: (n sobre k) = n!/(k!(n-k)!)
 
 def ejercicio4(n:int, k:int) -> float:
     Preconditions.check_argument(n>=k, "N tiene que ser mayor o igual que k")
