@@ -14,7 +14,7 @@ def ejercicio1(n:int, k:int) -> int:
 
 def ejercicio2(a:int, r:int, k:int) -> int:
     producto = 1
-    for n in range(0, k):
+    for n in range(0, k+1):
         e = a*(r**n)
         producto = producto*e
     return producto
@@ -30,11 +30,11 @@ def ejercicio4(n:int, k:int) -> float:
         x:float = (-1)**i
         y:float = math.factorial(k+1) // (math.factorial(i+1) * math.factorial((k+1) - (i+1)))
         z:float = (k-i)**n
-        a:float = 1/math.factorial(k)
         suma = suma + int(x + y + z)
-        s: float = float(a * suma)
-    return s
+    return suma/math.factorial(k)
 
+
+#definir f(x) y f'(x) para usarlas después
 
 def f(x:int) -> int:
     return x**2 - 2
