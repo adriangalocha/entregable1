@@ -7,9 +7,8 @@ from typing import Optional
 
 
 
-def ejercicio6(fichero:str, cad:str) -> int: 
+def ejercicio6(fichero:str, sep:str, cad:str) -> int: 
     res:int = 0
-    sep = (' ')
     try:
         with open(fichero, mode = 'r', encoding='utf-8') as f:
             contenido = f.read()

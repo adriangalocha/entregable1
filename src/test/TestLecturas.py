@@ -11,19 +11,21 @@ from lecturas.lecturas import ejercicio6, ejercicio7, ejercicio8, longitud_prome
 
 
 if __name__ == '__main__':
+ 
+
+    print(f'El número de veces que aparece la palabra Quijote es:')
+    print(ejercicio6('../resources/lin_quijote.txt', ' ', 'Quijote'))
+    print()
   
+    print(f'Las líneas que tienes la palabra Quijote son:')
+    print(ejercicio7('../resources/lin_quijote.txt', 'Quijote'))
+    print()
     
-    ubicacion:str = 'C/Users/Galocha/git/proyecto-laboratorio-python-adriangalocha/src/ficheros1'
-    fichero:str = '/lin_quijote.txt'
-    cad:str = 'Quijote'
-    print(ejercicio6(ubicacion+fichero, cad))
-    print(ejercicio7(ubicacion+fichero, cad))
-    print(ejercicio8(ubicacion+fichero))
+    print(ejercicio8('../resources/lin_quijote.txt'))
+    print()
     
-    ubicacion:str = 'C/Users/Galocha/git/proyecto-laboratorio-python-adriangalocha/src/ficheros1'
-    fichero:str = '/palabras_ramdon.csv'
-    print(longitud_promedio_lineas(ubicacion+fichero))
-    
-    
+    print(longitud_promedio_lineas('../resources/lin_quijote.txt'))
+  
+
     
     
